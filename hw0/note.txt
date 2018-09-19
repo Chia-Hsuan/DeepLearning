@@ -1,0 +1,17 @@
+I discussed the homework with Kevin Jang, Gui-Han Go, Kornraphop Kawintiranon and Armaan Khullar, and I asked some ideas from professor Keegan Hines.
+
+1
+
+1.1
+CAtBat, PutOuts, and AtBat are the final three predictors that remain in the model
+The optimal value of the regularization penalty is 0.0635481
+After finding the optimal value than putting in the Lasso model, there are only 14 predictors that remain in the model
+
+1.2 The optimal value of the regularization penalty is 1.0722672
+
+
+
+2
+
+Bias is how well our model can fit the data. Variance is when we run our model many times, how stable can it stand. So if the result of our model is far from the actual result, then the bias is big. When we run the model many times, the results between different times have big differences, then the variance is big. For underfitting, we have high bias and low variance since our model is too simple. For overfitting, since our model tries to fit noise, we have low bias and high variance. We cannot have underfitting and overfitting model at the same time. So, this is a tradeoff that we need to choose to make our model simpler or more complex in order to avoid serious undercutting and overfitting.
+Regularization adjust the weight of each predictor in order to make a good prediction of unseen data set. So it can help to solve the overfitting and undercutting problem. In question (1), we add the alpha in order to adjust the weight of predictors. In the beginning, 16 independent variables are too many, and some of them are not really related, so it is overfitting, and it has low bias and high variance. After apply Lasso regression, then it becomes 14 predictors. The bias increases and the variance decreases. The mean squared error of Ridge is 96589.3047, and the mean squared error of Lasso is 96243.0896
